@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 require("dotenv").config();
 const Book = require("./models/Book");
 const bookRoutes = require("./routes/bookRoutes");
+const userRoutes = require("./routes/userRoutes");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -14,6 +15,7 @@ mongoose.connect(uri,{useNewUrlParser:true,useUnifiedTopology:true})
 
 app.use(express.json());
 app.use("/api",bookRoutes);
+app.use("api",userRoutes);
 
 app.get('/',(req,res)=>{
     res.send("Server is running!")
