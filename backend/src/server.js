@@ -15,7 +15,7 @@ mongoose.connect(uri,{useNewUrlParser:true,useUnifiedTopology:true})
 
 app.use(express.json());
 app.use("/api",bookRoutes);
-app.use("api",userRoutes);
+app.use("/api",userRoutes);
 
 app.get('/',(req,res)=>{
     res.send("Server is running!")
