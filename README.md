@@ -59,3 +59,21 @@ Create a User Schema to store student details.
 Build an API route where users can borrow books (this updates the book’s availability).
 Ensure a book cannot be borrowed if it's already checked out.
 ✅ Expected Outcome: The backend now supports book borrowing and user management.
+
+**🎯 Task 6: Testing & Deployment (Making It Live)**
+📖 Why Is This Important?
+A library system is only useful if it works properly and is accessible online. Before releasing it, the backend needs to be:
+Tested to ensure all functions work correctly.
+Deployed so that students can access it from anywhere.
+📌 Task Description
+Use Postman to test each API endpoint and confirm they work as expected.
+Deploy the backend on a cloud server (like Render or Railway).
+Share the backend API link so the frontend team can use it.
+✅ Expected Outcome: The backend is fully functional and live on the internet.
+
+## Backend API (Deployed)
+Base URL: `https://library-backend.onrender.com`
+### Available Endpoints:
+- **Get all books:** `GET /api/books`
+- **Add a book:** `POST /api/books`
+- **Borrow a book:** `POST /api/users/:userId/borrow/:bookId`
