@@ -77,3 +77,36 @@ Base URL: `https://library-backend.onrender.com`
 - **Get all books:** `GET /api/books`
 - **Add a book:** `POST /api/books`
 - **Borrow a book:** `POST /api/users/:userId/borrow/:bookId`
+
+# Commands for initializing everything :
+1. git clone <git hub link> (in terminal)
+2. create 2 folders backend and frontend inside the created folder.
+2. cd <given folder name> (in terminal)
+4. cd <backend> (in terminal)
+5. npm init -y (in terminal)
+6. npm install express dotenv mongoose (in terminal)
+7. npm install --save-dev nodemon (in terminal)
+8. echo node_modules >.gitignore (in terminal) (creates a folder "gitignore and adds node_modules in it)
+9. echo .env >>.gitignore (in terminal) (inserts .env into the .gitignore for security purpose)
+****
+
+10. inside package.json file , inside "scripts", add these two lines :
+  "start": "node src/server.js",
+  "dev": "nodemon src/server.js"
+11. create a folder called src
+12. Add three folders called controllers, models, routes and a file called "server.js"
+13. Create a Mongodb connection and add it's url inside it. Also add PORT value of 3000.
+14. Inside models create two files called Book.js and User.js
+15. Inside routes create two files called bookRoutes.js and userRoutes.js
+16. Type your code in appropriate files
+****
+
+17. npm run dev (in terminal)
+18. git add . (in terminal)
+19. git commit -m "completed" (in terminal)
+20. git push -u origin main (in terminal)
+****
+
+21. Test it in postman to see if it works or not.
+22. Deploy this is Render.com
+23. Paste the Render url in Readme (or) else where.
